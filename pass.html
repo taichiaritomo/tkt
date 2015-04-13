@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- MyCSS -->
+    <link rel="stylesheet" href="pass.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <h1 id="header">BUS INTERSTATE PASS</h1>
+      
+    <div class="color1box">
+        <p id="zonenumber">3</p>
+        <p id="zones">ZONES</p>
+    </div>
+    
+    <div class="color1box" id="month">
+        <p id="mon"></p>
+        <p id="year">2015</p>
+    </div>
+    
+    <div id="imgcontainer">
+        <img src="qr.png">
+        <p id="tap">Tap to enlarge</p>
+    </div>
+      
+    <div id="datetime"></div>
+      
+    <div id="colorbars">
+        <div class="rec" id="rectangle1"></div>
+        <div class="rec" id="rectangle2"></div>
+        <div class="rec" id="rectangle3"></div>
+    </div>
+      
+    <p id="back">Back</p>
+      
+    <div id="timeremaining">jhj</div>
+      
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!-- Moment.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>
+    <!-- Clock script -->
+    <script type="text/javascript">
+        (function()
+         {
+            var datetime = null,
+            date = null;
+            var mon = null;
+            var update = function () {
+                date = moment(new Date())
+                datetime.html(date.format('ddd, MMM Do hh:mm:ss A'));
+                mon.html(date.format('MMM'));
+            };
+            $(document).ready(function(){
+                datetime = $('#datetime')
+                mon = $('#mon')
+                update();
+                setInterval(update, 1000);
+            });
+        })();
+    </script>
+  </body>
+</html>
