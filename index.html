@@ -33,7 +33,6 @@
     <br>
     <br>
     <input id="upload" type="file"/>
-    <p id="url"></p>  
     </div>
       
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -85,7 +84,6 @@
                 var reader = new FileReader();
                 reader.onload = function(event){
                     the_url = event.target.result
-                    $('#url').html(the_url)
                     document.getElementById('pass').style.backgroundImage = "url('"+the_url+"')";
                 }
 
