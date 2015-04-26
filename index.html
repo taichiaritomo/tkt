@@ -54,9 +54,7 @@
             date = moment(new Date());
             timetil = end.diff(moment());
             dur = moment.duration(timetil);
-            datetime.html(date.format('ddd, MMM DD hh:mm:ss A'));
-            // timeremaining.html('Expires in ' + dur.days() + ':' + dur.hours() + ':' + dur.minutes() + ':' + dur.seconds());
-            
+            datetime.html(date.format('ddd, MMM DD hh:mm:ss A')); 
             timeremaining.html('Expires in ' + dur.format('DD:hh:mm:ss'));
         };
         $(document).ready(function(){
