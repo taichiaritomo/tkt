@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 p {
     text-align: center;
     line-height: 90%;
@@ -83,6 +84,39 @@ img {
     margin-left: 2%;
     margin-right: 2%;
     margin-top: 2%;
+=======
+#pass {
+    height: 100vh;
+    background-image: url('IMG_4032.PNG');
+    background-size: cover;
+}
+
+#datetime {
+    position: relative;
+    top: 81%;
+    text-align: center;
+    font-size: 4.5vh;
+    font-weight: 500;
+    color: black;
+    background-color: white;
+}
+
+#flashblock {
+    position: relative;
+    top: 81.5%;
+    height: 5%;
+    background-color: white;
+}
+
+#timeremaining {
+    position: absolute;
+    right: 6%;
+    top: 93%;
+    font-size: 3.5vh;
+    font-weight:500;
+    color: black;
+    background-color: white;
+>>>>>>> new
 }
 
 #rectangle1 {
@@ -99,6 +133,7 @@ img {
     background-color: black;
 }
 
+<<<<<<< HEAD
 #back {
     float: left;
     margin-left: 7vw;
@@ -117,3 +152,5 @@ img {
     font-weight:500;
 }
 
+=======
+>>>>>>> new
