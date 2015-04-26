@@ -1,12 +1,13 @@
 #pass {
     height: 100vh;
     background-image: url('IMG_4032.PNG');
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 #datetime {
     position: relative;
-    top: 81%;
+    top: 800px;
     text-align: center;
     font-size: 4.5vh;
     font-weight: 500;
