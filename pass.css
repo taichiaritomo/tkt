@@ -1,25 +1,9 @@
 #pass {
-    position: relative;
-    overflow: hidden;
     height: 100vh;
-}
-
-#pass:before {
-	content: "";
-	position: absolute;
-    left: -20vh;
-	width: 100vh;
-	height: 100%;
-	z-index: -1;
-	background: url('IMG_4032.PNG');
+    background: url('IMG_4032.PNG');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-	-webkit-transform: rotate(90deg);
-	-moz-transform: rotate(90deg);
-	-ms-transform: rotate(90deg);
-	-o-transform: rotate(90deg);
-	transform: rotate(90deg);
 }
 
 #datetime {
